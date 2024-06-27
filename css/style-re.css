@@ -163,10 +163,6 @@
         left: 90px;
         
     }
-    
-    .popup {
-        
-    }
 
     .popup p {
         display: none;
@@ -195,57 +191,198 @@
     }
 }
 
-@media screen and (max-width: 768px) {
-
+@media screen and (max-width: 375px) {
     header {
-        font-size: 3rem;
+        height: 50px;
+        font-size: 2rem;
     }
     header .inner {
-        width: 768px;
+        width: 375px;
     }
-    
-    main .section:nth-child(1) .mainbg {
-        height: 75%;
+    header .inner ul li:hover {
+        background: url(../image/header\ paint\ white.PNG) no-repeat 10px center/contain;
     }
-    
-    main .section:nth-child(1) h1 {
-        font-size: 5rem;
-        top: 120px;
-        right: 50px;
+    header .inner ul li a {
+        line-height: 50px;
+    }
+    header .inner ul.on li:hover {
+        background: url(../image/header\ paint\ skyblue.PNG) no-repeat 10px center/contain;
+    }
+    header .inner .gotop {
+        width: 75px;
+        height: 70px;
+    }
+    header .inner .gotop a {
+        width: 75px;
+        height: 70px;
     }
 
+    main .section:nth-child(1) .mainbg {
+        background: url(../image/1page-background.png) no-repeat -820px center/cover;
+    }
+
+    main .section:nth-child(1) h1 {
+        font-size: 4.5rem;
+        top: 100px;
+        right: 20px;
+    }
     main .section:nth-child(1) p {
         font-size: 1.5rem;
-        top: 200px;
-        right: 50px;
+        top: 170px;
+        right: 25px;
     }
-
     main .section:nth-child(2) span {
-        font-size: 5.5rem;
-        left: 50px;
-        top: 75px;
-    } 
-
+        font-size: 4rem;
+        left: 25px;
+    }
     main .section:nth-child(2) .inter {
-        width: 728px;
-        height: 418px;
-        top: 70px;
-        left: 20px;
+        width: 288px;
+        height: 170px;
+        left: 50px;
     }
-
     main .section:nth-child(2) .inter video {
-        width: 728px;
-        height: 418px;
+        width: 288px;
+        height: 170px;
     }
-
     main .section:nth-child(2) .inter p {
+        font-size: 3rem;
+    }
+    main .section:nth-child(2) .box {
         display: none;
     }
 
-    main .section:nth-child(2) .box {
-        width: 768px;
-        height: 438px;
-        background: none;
+    .twopopup {
+        position: relative;
+    }
+    .twopopup .txt button {
+        font-size: 1rem;
+        width: 60px;
+        height: 20px;
+        line-height: 20px;
+        position: absolute;
+        top: 200px;
+    }
+    .twopopup figure {
+        height: 100%;
+    }
+    .twopopup figure video {
+        width: 288px;
+        height: 170px;
+        background-color: yellow;
+        position: absolute;
+        top: 228px;
+        right: 37px;
     }
 
+    .gallery-header {
+        font-size: 3rem;
+        padding: 10vh 10vw;
+    }
+    .gallery-header div {
+        font-size: 2rem;
+    }
+    .gallery-header .mo {
+        left: 40px;
+    }
+    .gallery-header .ef {
+        left: 40px;
+    }
+    .gallery-header .check {
+        font-size: 2rem;
+        left: 15px;
+        top: 248px;
+    }
+    .gallery-header .check.on {
+        top: 348px;
+    }
+    .gallery-collection {
+        padding: 25vh 0 0 5vw;
+    }
+    .motion li {
+        width: 50%;
+        height: 33%;
+    }
+    .edit li {
+        width: 375px;
+        height: 70%;
+    }
+
+    .motion li::after {
+        display: none;
+    }
+    .edit li::after {
+        display: none;
+    }
+    .gallery-collection li:hover::after {
+        display: none;
+    }
+    .motion li .inner .txt h3 {
+        font-size: 2.5rem;
+    }
+    .edit li .inner .txt h3 {
+        font-size: 2.5rem;
+    }
+    .motion li:hover .inner .txt h3 {
+        font-size: 2.5rem;
+    }
+    .edit li:hover .inner .txt h3 {
+        font-size: 2.5rem;
+    }
+    .motion li:hover .inner .txt p {
+        font-size: 1.5rem;
+    }
+    .edit li:hover .inner .txt p {
+        font-size: 1.5rem;
+    }
+    .motion li .inner .txt p {
+        font-size: 1.5rem;
+        top: 30%;
+        right: -90%;
+    }
+    .edit li .inner .txt p {
+        font-size: 1.5rem;
+        top: 25%;
+        right: -100%;
+    }
+    .motion li figure {
+        display: none;
+    }
+    .edit li figure {
+        display: none;
+    }
+    /* .popup {
+        position: relative;
+    } */
+    .popup .txt button {
+        font-size: 1rem;
+        width: 60px;
+        height: 20px;
+        line-height: 20px;
+        position: absolute;
+        top: 200px;
+    }
+    .popup figure {
+        height: 100%;
+    }
+    .popup figure video {
+        width: 288px;
+        height: 170px;
+        background-color: yellow;
+        position: absolute;
+        top: 228px;
+        right: 37px;
+    }
+
+    .section:nth-child(4) h3 {
+        font-size: 5rem;
+        text-align: center;
+    }
+    .section:nth-child(4) p {
+        font-size: 2rem;
+        text-align: center;
+        top: 45%;
+    }
+    .section:nth-child(4) .box {
+        background: url(../image/4page-background.png) no-repeat center 85px/350px;
+    }
 }
